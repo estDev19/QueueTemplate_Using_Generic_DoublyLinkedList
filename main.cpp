@@ -23,7 +23,7 @@ int main() {
         queue->dequeue();
         cout << *queue->front();
         queue->dequeue();
-        queue->dequeue();   //will generate an error (Exception class)
+        queue->dequeue();   //this deque throws an exception
         delete queue;
     }
     catch (Exception e){
